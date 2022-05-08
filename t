@@ -1,3 +1,6 @@
+if not game:IsLoaded() then
+game.Loaded:Wait()
+end
 repeat wait() until game:GetService("CoreGui")
 local msg = Instance.new("Message", workspace)
 local Asset = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
